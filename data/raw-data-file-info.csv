@@ -1,0 +1,3815 @@
+Variable,Description,Position
+Var0001,"Format: F8.2
+Measure: Scale
+Display Width: 8",1
+Respondent_Serial,"Label: Serial number
+Format: F10.0
+Measure: Scale
+Display Width: 8",2
+ID,"Label: ID
+Format: A192
+Measure: Nominal
+Display Width: 50",3
+ReturnCode,"Label: Return Code
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Not returned
+2,Abandoned
+3,Fraudulent
+4,Relevant duplicates
+5,Screen-out Client
+6,Screen-out IIS
+7,Quota Full Client
+8,Quota Full IIS
+9,Complete
+10,Complete Overquota
+11,Abandoned from Cortex
+12,ScreenOut from CORTEX
+13,Excused
+14,Abandoned NC before media question
+15,Abandoned NC for Day2
+16,Complete Day 1 NC
+17,Complete Day 2 NC
+18,Complete Recruitment ProductTest
+19,Complete Recall ProductTest
+20,Error
+21,Unsubscribe
+22,Wrong Complete
+23,Wrong Screenout
+24,Wrong Quotafull
+25,Abandoned from Landing Page
+26,""Redirected, not returned initial sample""
+27,""Redirected, client screened out initial sample""
+28,""Redirected, IIS screened out initial sample""
+29,""Redirected, client quota full initial sample""
+30,""Redirected, IIS quota full initial sample""
+31,""Redirected, client screened out interim sample""
+32,""Redirected, IIS screened out interim sample""
+33,""Redirected, client quota full interim sample""
+34,""Redirected, IIS quota full interim sample""",4
+IDType,"Label: Sample type:
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,real ID
+2,client ID
+3,panel ID
+4,test ID",5
+USHOU1,"Label: Which of the following best describes your living situation?{#CORTEX_RESP_INSTRUCTION.categories[{singlePunch}].label}
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Own a house
+2,Own a condo/co-op
+3,Rent
+4,Live with parents/relatives
+5,Other
+6,Prefer not to answer",6
+MRK_SMPGRP,"Label: Sample Group for programming purpose
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,GENPOP
+2,BOOST",7
+MRK_SMPSRC,"Label: Sample Source for programming purpose
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,ISAY ALLOCATED
+2,ISAY RE-ALLOCATED
+3,AMPARIO",8
+IISPanelistID,"Label: IIS Panelist ID
+Format: A192
+Measure: Nominal
+Display Width: 50",9
+DP_INCOME,"Label: Income Range for Weighting
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Under $25,000""
+2,""$25,000 to less than $50,000""
+3,""$50,000 to less than $75,000""
+4,""$75,000 to less than $100,000""
+5,""$100,000 or more""
+6,Refused",10
+DP_GENAGE,"Label: Gender Age for Weighting
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Male - 18 to 34
+2,Male - 35 to 54
+3,Male - 55 and older
+4,Female - 18 to 34
+5,Female - 35 to 54
+6,Female - 55 and older",11
+DP_EDUCATION_BAN,"Label: Education
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Grade School
+2,Some High School
+3,Graduated High School
+4,Some College
+5,""Associate's degree (for example: AA, AS)""
+6,""Bachelors degree (for example: BA, BS)""
+7,Post Graduate Degree",12
+DP_HISPANIC_BAN,"Label: Are you of Hispanic Ethnicity?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Don't Know/Not Sure",13
+DP_USHHI2_der,"Label: Household Income
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Under $15K
+2,$15K to less than $20K
+3,$20K to less than $25K
+4,$25K to less than $30K
+5,$30K to less than $40K
+6,$40K to less than $50K
+7,$50K to less than $75K
+8,$75K to less than $100K
+9,$100K to less than $150K
+10,$150K or more",14
+usedu3_der,"Label: Education
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Grade School
+2,Some High School
+3,Graduated High School
+4,Some College
+5,""Associate's degree (for example:  AA, AS)""
+6,""Bachelor's degree (for example:  BA, BS)""
+7,Post Graduate Degree",15
+usmar2_der,"Label: Marital Status
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Single
+2,Domestic Partnership
+3,Married
+4,Widowed
+5,Divorced or separated",16
+EMP01_der,"Label: Employment
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Employed - full-time
+2,Employed - part-time
+3,Self-Employed
+4,Retired
+5,Student
+6,Military
+7,Homemaker
+8,Currently Unemployed
+9,(Dk/Ns)",17
+USRACE4_der,"Label: Race
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,White
+2,Black
+3,Asian
+4,Other",18
+USRETH3_der,"Label: Are you of Hispanic Ethnicity?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,(Dk/Ns)",19
+HADD_ZipCode_US,"Label: HADD_ZipCode_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",20
+HCAL_REGION1_US,"Label: HCAL_REGION1_US
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,AL
+2,AK
+4,AZ
+5,AR
+6,CA
+8,CO
+9,CT
+10,DE
+11,DC
+12,FL
+13,GA
+15,HI
+16,ID
+17,IL
+18,IN
+19,IA
+20,KS
+21,KY
+22,LA
+23,ME
+24,MD
+25,MA
+26,MI
+27,MN
+28,MS
+29,MO
+30,MT
+31,NE
+32,NV
+33,NH
+34,NJ
+35,NM
+36,NY
+37,NC
+38,ND
+39,OH
+40,OK
+41,OR
+42,PA
+44,RI
+45,SC
+46,SD
+47,TN
+48,TX
+49,UT
+50,VT
+51,VA
+53,WA
+54,WV
+55,WI
+56,WY",21
+HCAL_REGION1_Label_abbreviation_US,"Label: HCAL_REGION1_Label_abbreviation_US
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,AL
+2,AK
+3,AZ
+4,AR
+5,CA
+6,CO
+7,CT
+8,DE
+9,DC
+10,FL
+11,GA
+12,HI
+13,ID
+14,IL
+15,IN
+16,IA
+17,KS
+18,KY
+19,LA
+20,ME
+21,MD
+22,MA
+23,MI
+24,MN
+25,MS
+26,MO
+27,MT
+28,NE
+29,NV
+30,NH
+31,NJ
+32,NM
+33,NY
+34,NC
+35,ND
+36,OH
+37,OK
+38,OR
+39,PA
+40,RI
+41,SC
+42,SD
+43,TN
+44,TX
+45,UT
+46,VT
+47,VA
+48,WA
+49,WV
+50,WI
+51,WY",22
+HCAL_REGION1_Label_US,"Label: HCAL_REGION1_Label_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",23
+HCAL_Region3_US,"Label: HCAL_Region3_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",24
+HCAL_Region3_Label_US,"Label: HCAL_Region3_Label_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",25
+HCAL_Region2_US,"Label: HCAL_Region2_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",26
+HCAL_Region2_Label_US,"Label: HCAL_Region2_Label_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",27
+HCAL_AGGLO_CODE_US,"Label: HCAL_AGGLO_CODE_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",28
+HCAL_AGGLO_CODE_Label_US,"Label: HCAL_AGGLO_CODE_Label_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",29
+HCAL_MktSize_US,"Label: HCAL_MktSize_US
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""10,000-99,999""
+2,""100,000-249,999""
+3,""250,000-499,999""
+4,""500,000-999,999""
+5,""1,000,000-2,499,999""
+6,""2,500,000-4,999,999""
+7,""5,000,000 +""
+9,Non CBSA",30
+HCAL_MktSize_Label_US,"Label: HCAL_MktSize_Label_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",31
+HCAL_STDMKTSIZE_US,"Label: HCAL_STDMKTSIZE_US
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,<1M
+2,1M-4.9M
+3,5M+
+4,Non metro",32
+HCAL_STDMKTSIZE_Label_US,"Label: HCAL_STDMKTSIZE_Label_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",33
+HCAL_STDREGION_4CODES_US,"Label: HCAL_STDREGION_4CODES_US
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Northeast
+2,Midwest
+3,South
+4,West",34
+HCAL_STDREGION_4CODES_Label_US,"Label: HCAL_STDREGION_4CODES_Label_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",35
+HCAL_STDREGION_US,"Label: HCAL_STDREGION_US
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,New England
+2,Middle Atlantic
+3,East North Central 
+4,West North Central
+5,South Atlantic
+6,East South Central
+7,West South Central 
+8,Mountain
+9,Pacific",36
+HCAL_STDREGION_Label_US,"Label: HCAL_STDREGION_Label_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",37
+TimeZone_US,"Label: TimeZone_US
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+5,Eastern (GMT -05:00)
+6,Central (GMT -06:00)
+7,Mountain (GMT -07:00)
+8,Pacific (GMT -08:00)
+9,Alaska (GMT -09:00)
+10,Hawaii-Aleutian Islands (GMT -10:00)",38
+Time_Zone_Label_US,"Label: Time_Zone_Label_US
+Format: A3072
+Measure: Nominal
+Display Width: 50",39
+NielsenCountySizeCode_US,"Label: NielsenCountySizeCode_US
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,A
+2,B
+3,C
+4,D",40
+QMktSize_1_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",41
+QMktSize_2_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",42
+QMktSize_3_1,"Label: HCAL_STDREGION_code : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",43
+QMktSize_4_1,"Label: HCAL_STDREGION_label : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",44
+QMktSize_5_1,"Label: HCAL_REGION1_code : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",45
+QMktSize_6_1,"Label: HCAL_REGION1_label : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",46
+QMktSize_7_1,"Label: HCAL_REGION2_code : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",47
+QMktSize_8_1,"Label: HCAL_REGION2_label : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",48
+QMktSize_9_1,"Label: HCAL_REGION3_code : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",49
+QMktSize_10_1,"Label: HCAL_REGION3_label : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",50
+QMktSize_11_1,"Label: HCAL_MktSize_code : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",51
+QMktSize_12_1,"Label: HCAL_MktSize_label : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",52
+QMktSize_13_1,"Label: HCAL_StdMktSize_code : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",53
+QMktSize_14_1,"Label: HCAL_StdMktSize_label : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",54
+QMktSize_15_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",55
+QMktSize_16_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",56
+QMktSize_17_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",57
+QMktSize_18_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",58
+QMktSize_19_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",59
+QMktSize_20_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",60
+QMktSize_21_1,"Label: NielsenCountySizeCode : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",61
+QMktSize_22_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",62
+QMktSize_23_1,"Label: HADD_ZIPCODE : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",63
+QMktSize_24_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",64
+QMktSize_25_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",65
+QMktSize_26_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",66
+QMktSize_27_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",67
+QMktSize_28_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",68
+QMktSize_29_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",69
+QMktSize_30_1,"Label: HCAL_STDREGION_4CODES_code : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",70
+QMktSize_31_1,"Label: HCAL_STDREGION_4CODES_label : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",71
+QMktSize_32_1,"Label: HCAL_AGGLO_CODE : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",72
+QMktSize_33_1,"Label: HCAL_AGGLO_CODE_Label : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",73
+QMktSize_34_1,"Label: HCAL_REGION1_label_abbreviation : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",74
+QMktSize_35_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",75
+QMktSize_36_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",76
+QMktSize_37_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",77
+QMktSize_38_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",78
+QMktSize_39_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",79
+QMktSize_40_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",80
+QMktSize_41_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",81
+QMktSize_42_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",82
+QMktSize_43_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",83
+QMktSize_44_1,"Label: HCAL_Population : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",84
+QMktSize_45_1,"Label: Time_Zone : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",85
+QMktSize_46_1,"Label: Time_Zone_Label : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",86
+QMktSize_47_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",87
+QMktSize_48_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",88
+QMktSize_49_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",89
+QMktSize_50_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",90
+QMktSize_51_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",91
+QMktSize_52_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",92
+QMktSize_53_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",93
+QMktSize_54_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",94
+QMktSize_55_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",95
+QMktSize_56_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",96
+QMktSize_57_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",97
+QMktSize_58_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",98
+QMktSize_59_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",99
+QMktSize_60_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",100
+QMktSize_61_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",101
+QMktSize_62_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",102
+QMktSize_63_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",103
+QMktSize_64_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",104
+QMktSize_65_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",105
+QMktSize_66_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",106
+QMktSize_67_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",107
+QMktSize_68_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",108
+QMktSize_69_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",109
+QMktSize_70_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",110
+QMktSize_71_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",111
+QMktSize_72_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",112
+QMktSize_73_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",113
+QMktSize_74_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",114
+QMktSize_75_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",115
+QMktSize_76_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",116
+QMktSize_77_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",117
+QMktSize_78_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",118
+QMktSize_79_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",119
+QMktSize_80_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",120
+QMktSize_81_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",121
+QMktSize_82_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",122
+QMktSize_83_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",123
+QMktSize_84_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",124
+QMktSize_85_1,"Label: HCAL_AGGLO_CODE_TYPE_US : Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",125
+QMktSize_86_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",126
+QMktSize_87_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",127
+QMktSize_88_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",128
+QMktSize_89_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",129
+QMktSize_90_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",130
+QMktSize_91_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",131
+QMktSize_92_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",132
+QMktSize_93_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",133
+QMktSize_94_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",134
+QMktSize_95_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",135
+QMktSize_96_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",136
+QMktSize_97_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",137
+QMktSize_98_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",138
+QMktSize_99_1,"Label: Please insert your zip code:&#160;
+Format: A300
+Measure: Nominal
+Display Width: 50",139
+ZIP_3DIGIT,"Label: ZIP_3DIGIT
+Format: F11.0
+Measure: Scale
+Display Width: 8",140
+ZIP_5DIGIT,"Label: ZIP_5DIGIT
+Format: F11.0
+Measure: Scale
+Display Width: 8",141
+State_Recoded,"Label: State_Recoded
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Alabama
+2,Alaska
+3,Arizona
+4,Arkansas
+5,California
+6,Colorado
+7,Connecticut
+8,Delaware
+9,District of Columbia
+10,Florida
+11,Georgia
+12,Hawaii
+13,Idaho
+14,Illinois
+15,Indiana
+16,Iowa
+17,Kansas
+18,Kentucky
+19,Louisiana
+20,Maine
+21,Maryland
+22,Massachusetts
+23,Michigan
+24,Minnesota
+25,Mississippi
+26,Missouri
+27,Montana
+28,Nebraska
+29,Nevada
+30,New Hampshire
+31,New Jersey
+32,New Mexico
+33,New York
+34,North Dakota
+35,North Carolina
+36,Ohio
+37,Oklahoma
+38,Oregon
+39,Pennsylvania
+40,Rhode Island
+41,South Dakota
+42,South Carolina
+43,Tennessee
+44,Texas
+45,Utah
+46,Vermont
+47,Virginia
+48,Washington
+49,West Virginia
+50,Wisconsin
+51,Wyoming",142
+USHHI2,"Label: Please indicate your annual household income before taxes.{#CORTEX_RESP_INSTRUCTION.categories[{blankInstr}].label}
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Less than $5,000""
+2,""$5,000-$9,999""
+3,""$10,000-$14,999""
+4,""$15,000-$19,999""
+5,""$20,000-$24,999""
+6,""$25,000-$29,999""
+7,""$30,000-$34,999""
+8,""$35,000-$39,999""
+9,""$40,000-$44,999""
+10,""$45,000-$49,999""
+11,""$50,000-$54,999""
+12,""$55,000-$59,999""
+13,""$60,000-$64,999""
+14,""$65,000-$69,999""
+15,""$70,000-$74,999""
+16,""$75,000-$79,999""
+17,""$80,000-$89,999""
+18,""$90,000-$99,999""
+19,""$100,000-$124,999""
+20,""$125,000-$149,999""
+21,""$150,000-$199,999""
+22,""$200,000-$249,999""
+23,""$250,000 or more""
+24,Prefer not to answer",143
+DMA,"Label: dummy question for ZIP-DMA
+Format: F11.0
+Measure: Scale
+Display Width: 8",144
+DP_ETHNICITY_BAN,"Label: What is your race?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,White
+2,Black
+3,Other",145
+Weightvar,"Label: Weighting
+Format: F40.2
+Measure: Scale
+Display Width: 8",146
+resp_gender,"Label: Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Male
+2,Female",147
+resp_age,"Label: RespondentAge
+Format: F3.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,1
+2,2
+3,3
+4,4
+5,5
+6,6
+7,7
+8,8
+9,9
+10,10
+11,11
+12,12
+13,13
+14,14
+15,15
+16,16
+17,17
+18,18
+19,19
+20,20
+21,21
+22,22
+23,23
+24,24
+25,25
+26,26
+27,27
+28,28
+29,29
+30,30
+31,31
+32,32
+33,33
+34,34
+35,35
+36,36
+37,37
+38,38
+39,39
+40,40
+41,41
+42,42
+43,43
+44,44
+45,45
+46,46
+47,47
+48,48
+49,49
+50,50
+51,51
+52,52
+53,53
+54,54
+55,55
+56,56
+57,57
+58,58
+59,59
+60,60
+61,61
+62,62
+63,63
+64,64
+65,65
+66,66
+67,67
+68,68
+69,69
+70,70
+71,71
+72,72
+73,73
+74,74
+75,75
+76,76
+77,77
+78,78
+79,79
+80,80
+81,81
+82,82
+83,83
+84,84
+85,85
+86,86
+87,87
+88,88
+89,89
+90,90
+91,91
+92,92
+93,93
+94,94
+95,95
+96,96
+97,97
+98,98
+99,99
+100,100
+101,101
+102,102
+103,103
+104,104
+105,105
+998,Age not calculated
+999,Age < 1",148
+resp_age_long,"Label: Age
+Format: F11.0
+Measure: Scale
+Display Width: 8",149
+REGION4,"Label: Region
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Northeast
+2,Midwest
+3,South
+4,West",150
+US09KID,"Label: How many children under the age of 18 live in your household?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,0
+1,1
+2,2
+3,3
+4,4
+5,5
+6,6+",151
+US09KAB01,"Label: Less than 1 year old
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",152
+US09KAB02,"Label: 1
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",153
+US09KAB03,"Label: 2
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",154
+US09KAB04,"Label: 3
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",155
+US09KAB05,"Label: 4
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",156
+US09KAB06,"Label: 5
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",157
+US09KAB07,"Label: 6
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",158
+US09KAB08,"Label: 7
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",159
+US09KAB09,"Label: 8
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",160
+US09KAB10,"Label: 9
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",161
+US09KAB11,"Label: 10
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",162
+US09KAB12,"Label: 11
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",163
+US09KAB13,"Label: 12
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",164
+US09KAB14,"Label: 13
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",165
+US09KAB15,"Label: 14
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",166
+US09KAB16,"Label: 15
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",167
+US09KAB17,"Label: 16
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",168
+US09KAB18,"Label: 17
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",169
+US09KAB19,"Label: I don't have any boys
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",170
+US09KAG01,"Label: Less than 1 year old
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",171
+US09KAG02,"Label: 1
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",172
+US09KAG03,"Label: 2
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",173
+US09KAG04,"Label: 3
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",174
+US09KAG05,"Label: 4
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",175
+US09KAG06,"Label: 5
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",176
+US09KAG07,"Label: 6
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",177
+US09KAG08,"Label: 7
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",178
+US09KAG09,"Label: 8
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",179
+US09KAG10,"Label: 9
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",180
+US09KAG11,"Label: 10
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",181
+US09KAG12,"Label: 11
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",182
+US09KAG13,"Label: 12
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",183
+US09KAG14,"Label: 13
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",184
+US09KAG15,"Label: 14
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",185
+US09KAG16,"Label: 15
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",186
+US09KAG17,"Label: 16
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",187
+US09KAG18,"Label: 17
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",188
+US09KAG19,"Label: I don't have any girls
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",189
+USMAR2,"Label: What is your marital status?{#CORTEX_RESP_INSTRUCTION.categories[{singlePunch}].label}
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Single, never married""
+2,Living with partner
+3,Married
+4,Widowed
+5,Divorced or separated",190
+STATE,"Label: dummy question for ZIP-STATE
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Alabama
+2,Alaska
+3,Arizona
+4,Arkansas
+5,California
+6,Colorado
+7,Connecticut
+8,Delaware
+9,District of Columbia
+10,Florida
+11,Georgia
+12,Hawaii
+13,Idaho
+14,Illinois
+15,Indiana
+16,Iowa
+17,Kansas
+18,Kentucky
+19,Louisiana
+20,Maine
+21,Maryland
+22,Massachusetts
+23,Michigan
+24,Minnesota
+25,Mississippi
+26,Missouri
+27,Montana
+28,Nebraska
+29,Nevada
+30,New Hampshire
+31,New Jersey
+32,New Mexico
+33,New York
+34,North Carolina
+35,North Dakota
+36,Ohio
+37,Oklahoma
+38,Oregon
+39,Pennsylvania
+40,Rhode Island
+41,South Carolina
+42,South Dakota
+43,Tennessee
+44,Texas
+45,Utah
+46,Vermont
+47,Virginia
+48,Washington
+49,West Virginia
+50,Wisconsin
+51,Wyoming
+52,None of the above",191
+US09KAB_AG_merged01,"Label: Less than 1 year old
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",192
+US09KAB_AG_merged02,"Label: 1
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",193
+US09KAB_AG_merged03,"Label: 2
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",194
+US09KAB_AG_merged04,"Label: 3
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",195
+US09KAB_AG_merged05,"Label: 4
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",196
+US09KAB_AG_merged06,"Label: 5
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",197
+US09KAB_AG_merged07,"Label: 6
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",198
+US09KAB_AG_merged08,"Label: 7
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",199
+US09KAB_AG_merged09,"Label: 8
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",200
+US09KAB_AG_merged10,"Label: 9
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",201
+US09KAB_AG_merged11,"Label: 10
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",202
+US09KAB_AG_merged12,"Label: 11
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",203
+US09KAB_AG_merged13,"Label: 12
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",204
+US09KAB_AG_merged14,"Label: 13
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",205
+US09KAB_AG_merged15,"Label: 14
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",206
+US09KAB_AG_merged16,"Label: 15
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",207
+US09KAB_AG_merged17,"Label: 16
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",208
+US09KAB_AG_merged18,"Label: 17
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",209
+US09KAB_AG_merged19,"Label: I don't have any kids
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",210
+Age_pres,"Label: Age & Presence Of Children
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Under 6 only
+2,6-12 Only
+3,13-17 Only
+4,Under 6 and 6-12
+5,Under 6 and 13-17
+6,6-12 and 13-17
+7,All 3
+8,None Under 18",211
+GENAGE_der,"Label: Gender Age for Weighting
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Male - 18 to 34
+2,Male - 35 to 54
+3,Male - 55 to 100
+4,Female - 18 to 34
+5,Female - 35 to 54
+6,Female - 55 to 100",212
+MRK_STATUS_DWD,"Label: Holds the status of the section
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Section got asked
+2,Section got skipped due to entry condition
+3,Section got skipped due to section quota target has been met
+4,Qualifying question not answered",213
+MRK_START_TIME_DWD,"Label: Holds the time before section is getting asked.
+Format: A75
+Measure: Nominal
+Display Width: 25",214
+MRK_END_TIME_DWD,"Label: Holds the time after section is answered.
+Format: A75
+Measure: Nominal
+Display Width: 25",215
+MRK_DIFF_TIME_DWD,"Label: Holds the difference time (in secs) before section is getting asked & it is answered.
+Format: F10.0
+Measure: Scale
+Display Width: 8",216
+QUOTA_DWD,"Label: Quota for section DWD - CNAME - CDESC
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,QUOTA DWD - CNAME - DESC - Completes",217
+QUOTA_CAN_GENDER_DWD,"Label: Quota for GENDER MARKER DWD - CNAME - CDESC
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,QUOTA DWD - CNAME - DESC - Male
+2,QUOTA DWD - CNAME - DESC - Female",218
+QUOTA_CAN_AGERANGE_DWD,"Label: Quota for AGE RANGE MARKER DWD - CNAME - CDESC
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,QUOTA DWD - CNAME - DESC - Male 18-34
+2,QUOTA DWD - CNAME - DESC - Male 35-54
+3,QUOTA DWD - CNAME - DESC - Male 55+
+4,QUOTA DWD - CNAME - DESC - Female 18-34
+5,QUOTA DWD - CNAME - DESC - Female 35-54
+6,QUOTA DWD - CNAME - DESC - Female 55+",219
+QUOTA_CAN_REGION_DWD,"Label: Quota for REGION MARKER DWD - CNAME - CDESC
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,QUOTA DWD - CNAME - DESC - BC
+2,QUOTA DWD - CNAME - DESC - AB
+3,QUOTA DWD - CNAME - DESC - SK/MB
+4,QUOTA DWD - CNAME - DESC - ON
+5,QUOTA DWD - CNAME - DESC - QC
+6,QUOTA DWD - CNAME - DESC - Atlantic Canada",220
+DWD1,"Label: Generally speaking, do you usually think of yourself as a Democrat, Republican, or Independent?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Democrat
+2,Republican
+3,Independent
+4,Other (please specify)",221
+DWD1_4,"Format: A3072
+Measure: Nominal
+Display Width: 50",222
+DWD2,"Label: Would you call yourself a strong Democrat or a not very strong Democrat?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Strong Democrat
+2,Not very strong Democrat",223
+DWD3,"Label: Would you call yourself a strong Republican or a not very strong Republican?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Strong Republican
+2,Not very strong Republican",224
+DWD4,"Label: Do you think of yourself as closer to the Democratic Party or the Republican Party?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Democratic Party
+2,Republican Party
+3,Neither",225
+DWD5,"Label: In talking to people about elections, we often find that people were not able to vote because they weren't registered, they were sick, or they just didn't have time. Which of the following best describes you:
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,I did not vote in the election this November
+2,""I thought about voting in the November election, but didn't""
+3,""I usually vote, but didn't vote in the November election""
+4,I am sure I voted in the November election",226
+QUOTAROTDWD1,"Label: 1-4
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",227
+QUOTAROTDWD2,"Label: 4-1
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",228
+DWD6,"Label: Who did you vote for in the 2016 Presidential election?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Hillary Clinton
+2,Donald Trump
+3,Gary Johnson
+4,Jill Stein
+5,Other (please specify)",229
+DWD6_5,"Format: A3072
+Measure: Nominal
+Display Width: 50",230
+QUOTA_HEADSLINES_ATOE1,"Label: Pope Francis Shocks World, Endorses Donald Trump for President, Releases Statement
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",231
+QUOTA_HEADSLINES_ATOE2,"Label: Donald Trump Sent His Own Plane to Transport 200 Stranded Marines
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",232
+QUOTA_HEADSLINES_ATOE3,"Label: FBI Agent Suspected in Hillary Email Leaks Found Dead in Apparent Murder - Suicide
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",233
+QUOTA_HEADSLINES_ATOE4,"Label: Donald Trump Protester Speaks Out: ""I Was Paid $3,500 to Protest Trump's Rally""
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",234
+QUOTA_HEADSLINES_ATOE5,"Label: FBI Director Comey Just Put a Trump Sign On His Front Lawn
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",235
+QUOTA_HEADSLINES_FTOK1,"Label: Melania Trump's Girl-on-Girl Photos From Racy Shoot Revealed
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",236
+QUOTA_HEADSLINES_FTOK2,"Label: Barbara Bush: ""I don't know how women can vote"" for Trump
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",237
+QUOTA_HEADSLINES_FTOK3,"Label: Donald Trump Says He'd 'Absolutely' Require Muslims to Register
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",238
+QUOTA_HEADSLINES_FTOK4,"Label: Trump: ""I Will Protect Our LGBTQ Citizens""
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",239
+QUOTA_HEADSLINES_FTOK5,"Label: I Ran the C.I.A Now I'm Endorsing Hillary Clinton
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",240
+QUOTA_HEADSLINES_FTOK6,"Label: Donald Trump on Refusing Presidential Salary: ""I'm not taking it""
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",241
+MRK_ORD_LOOPDWD7_DWD8_A_ORD_LOOPDWD7_DWD8,"Label: 'Pope Francis Shocks World, Endorses Donald Trump for President, Releases Statement' : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",242
+MRK_ORD_LOOPDWD7_DWD8_B_ORD_LOOPDWD7_DWD8,"Label: Donald Trump Sent His Own Plane to Transport 200 Stranded Marines : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",243
+MRK_ORD_LOOPDWD7_DWD8_C_ORD_LOOPDWD7_DWD8,"Label: FBI Agent Suspected in Hillary Email Leaks Found Dead in Apparent Murder - Suicide : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",244
+MRK_ORD_LOOPDWD7_DWD8_D_ORD_LOOPDWD7_DWD8,"Label: 'Donald Trump Protester Speaks Out: ""I Was Paid $3,500 to Protest Trump's Rally""' : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",245
+MRK_ORD_LOOPDWD7_DWD8_E_ORD_LOOPDWD7_DWD8,"Label: FBI Director Comey Just Put a Trump Sign On His Front Lawn : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",246
+MRK_ORD_LOOPDWD7_DWD8_F_ORD_LOOPDWD7_DWD8,"Label: Melania Trump's Girl-on-Girl Photos From Racy Shoot Revealed : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",247
+MRK_ORD_LOOPDWD7_DWD8_G_ORD_LOOPDWD7_DWD8,"Label: Barbara Bush: ""I don't know how women can vote"" for Trump : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",248
+MRK_ORD_LOOPDWD7_DWD8_H_ORD_LOOPDWD7_DWD8,"Label: Donald Trump Says He'd 'Absolutely' Require Muslims to Register : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",249
+MRK_ORD_LOOPDWD7_DWD8_I_ORD_LOOPDWD7_DWD8,"Label: Trump: ""I Will Protect Our LGBTQ Citizens"" : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",250
+MRK_ORD_LOOPDWD7_DWD8_J_ORD_LOOPDWD7_DWD8,"Label: I Ran the C.I.A Now I'm Endorsing Hillary Clinton : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",251
+MRK_ORD_LOOPDWD7_DWD8_K_ORD_LOOPDWD7_DWD8,"Label: Donald Trump on Refusing Presidential Salary: ""I'm not taking it"" : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",252
+ProgCtrLOOPDWD7_DWD8,"Label: This is programming purpose only: Holds the number of Iteration completed for LOOPDWD7_DWD8
+Format: F8.0
+Measure: Scale
+Display Width: 8",253
+LOOPDWD7_DWD8_A_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?Pope Francis Shocks World, Endorses Donald Trump for President, Releases Statement
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",254
+LOOPDWD7_DWD8_B_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?Donald Trump Sent His Own Plane to Transport 200 Stranded Marines
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",255
+LOOPDWD7_DWD8_C_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?FBI Agent Suspected in Hillary Email Leaks Found Dead in Apparent Murder - Suicide
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",256
+LOOPDWD7_DWD8_D_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?Donald Trump Protester Speaks Out: ""I Was Paid $3,500 to Protest Trump's Rally""
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",257
+LOOPDWD7_DWD8_E_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?FBI Director Comey Just Put a Trump Sign On His Front Lawn
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",258
+LOOPDWD7_DWD8_F_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?Melania Trump's Girl-on-Girl Photos From Racy Shoot Revealed
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",259
+LOOPDWD7_DWD8_G_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?Barbara Bush: ""I don't know how women can vote"" for Trump
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",260
+LOOPDWD7_DWD8_H_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?Donald Trump Says He'd 'Absolutely' Require Muslims to Register
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",261
+LOOPDWD7_DWD8_I_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?Trump: ""I Will Protect Our LGBTQ Citizens""
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",262
+LOOPDWD7_DWD8_J_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?I Ran the C.I.A Now I'm Endorsing Hillary Clinton
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",263
+LOOPDWD7_DWD8_K_DWD7,"Label: Have you seen or heard about the following story in the past few weeks?Donald Trump on Refusing Presidential Salary: ""I'm not taking it""
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Unsure",264
+LOOPDWD7_DWD8_A_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?Pope Francis Shocks World, Endorses Donald Trump for President, Releases Statement
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",265
+LOOPDWD7_DWD8_B_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?Donald Trump Sent His Own Plane to Transport 200 Stranded Marines
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",266
+LOOPDWD7_DWD8_C_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?FBI Agent Suspected in Hillary Email Leaks Found Dead in Apparent Murder - Suicide
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",267
+LOOPDWD7_DWD8_D_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?Donald Trump Protester Speaks Out: ""I Was Paid $3,500 to Protest Trump's Rally""
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",268
+LOOPDWD7_DWD8_E_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?FBI Director Comey Just Put a Trump Sign On His Front Lawn
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",269
+LOOPDWD7_DWD8_F_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?Melania Trump's Girl-on-Girl Photos From Racy Shoot Revealed
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",270
+LOOPDWD7_DWD8_G_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?Barbara Bush: ""I don't know how women can vote"" for Trump
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",271
+LOOPDWD7_DWD8_H_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?Donald Trump Says He'd 'Absolutely' Require Muslims to Register
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",272
+LOOPDWD7_DWD8_I_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?Trump: ""I Will Protect Our LGBTQ Citizens""
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",273
+LOOPDWD7_DWD8_J_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?I Ran the C.I.A Now I'm Endorsing Hillary Clinton
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",274
+LOOPDWD7_DWD8_K_DWD8,"Label: To the best of your knowledge, how accurate is the claim in the following headline?Donald Trump on Refusing Presidential Salary: ""I'm not taking it""
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Very accurate
+2,Somewhat accurate
+3,Not very accurate
+4,Not at all accurate",275
+GRID_DWD9_1_DWD9,"Label: Facebook : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Multiple times a day
+2,Once a day
+3,A few times a week
+4,Once a week
+5,A few times a month
+6,Once a month
+7,Less than once a month
+8,I don't use this social media platform",276
+GRID_DWD9_2_DWD9,"Label: Instagram : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Multiple times a day
+2,Once a day
+3,A few times a week
+4,Once a week
+5,A few times a month
+6,Once a month
+7,Less than once a month
+8,I don't use this social media platform",277
+GRID_DWD9_3_DWD9,"Label: Pinterest : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Multiple times a day
+2,Once a day
+3,A few times a week
+4,Once a week
+5,A few times a month
+6,Once a month
+7,Less than once a month
+8,I don't use this social media platform",278
+GRID_DWD9_4_DWD9,"Label: Snapchat : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Multiple times a day
+2,Once a day
+3,A few times a week
+4,Once a week
+5,A few times a month
+6,Once a month
+7,Less than once a month
+8,I don't use this social media platform",279
+GRID_DWD9_5_DWD9,"Label: Twitter : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Multiple times a day
+2,Once a day
+3,A few times a week
+4,Once a week
+5,A few times a month
+6,Once a month
+7,Less than once a month
+8,I don't use this social media platform",280
+GRID_DWD9_6_DWD9,"Label: YouTube : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Multiple times a day
+2,Once a day
+3,A few times a week
+4,Once a week
+5,A few times a month
+6,Once a month
+7,Less than once a month
+8,I don't use this social media platform",281
+DWD10,"Label: How frequently do you share news content you find online (this could be through social media, email, text, messenger, etc.)?
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Multiple times a day
+2,Once a day
+3,A few times a week
+4,Once a week
+5,A few times a month
+6,Once a month
+7,Less than once a month
+8,Rarely / never",282
+GRID_DWD11_1_DWD11,"Label: BuzzFeed : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",283
+GRID_DWD11_2_DWD11,"Label: Huffington Post : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",284
+GRID_DWD11_3_DWD11,"Label: New York Times : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",285
+GRID_DWD11_4_DWD11,"Label: Facebook : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",286
+GRID_DWD11_5_DWD11,"Label: Twitter : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",287
+GRID_DWD11_6_DWD11,"Label: Snapchat : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",288
+GRID_DWD11_7_DWD11,"Label: VICE : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",289
+GRID_DWD11_8_DWD11,"Label: CNN : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",290
+GRID_DWD11_9_DWD11,"Label: Vox : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",291
+GRID_DWD11_10_DWD11,"Label: Business Insider : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",292
+GRID_DWD11_11_DWD11,"Label: Washington Post : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",293
+GRID_DWD11_12_DWD11,"Label: Google News : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",294
+GRID_DWD11_13_DWD11,"Label: Yahoo News : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",295
+GRID_DWD11_14_DWD11,"Label: Drudge Report : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",296
+GRID_DWD11_15_DWD11,"Label: Fox News : 
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Is a major source of news for me
+2,Is a minor source of news for me
+3,Is rarely a source of news for me
+4,Is never a source of news for me
+5,I'm not familiar with this news source",297
+MRK_ORDER_DWD11_1_MRK_ORDER_DWD11,"Label: BuzzFeed : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",298
+MRK_ORDER_DWD11_2_MRK_ORDER_DWD11,"Label: Huffington Post : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",299
+MRK_ORDER_DWD11_3_MRK_ORDER_DWD11,"Label: New York Times : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",300
+MRK_ORDER_DWD11_4_MRK_ORDER_DWD11,"Label: Facebook : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",301
+MRK_ORDER_DWD11_5_MRK_ORDER_DWD11,"Label: Twitter : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",302
+MRK_ORDER_DWD11_6_MRK_ORDER_DWD11,"Label: Snapchat : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",303
+MRK_ORDER_DWD11_7_MRK_ORDER_DWD11,"Label: VICE : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",304
+MRK_ORDER_DWD11_8_MRK_ORDER_DWD11,"Label: CNN : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",305
+MRK_ORDER_DWD11_9_MRK_ORDER_DWD11,"Label: Vox : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",306
+MRK_ORDER_DWD11_10_MRK_ORDER_DWD11,"Label: Business Insider : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",307
+MRK_ORDER_DWD11_11_MRK_ORDER_DWD11,"Label: Washington Post : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",308
+MRK_ORDER_DWD11_12_MRK_ORDER_DWD11,"Label: Google News : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",309
+MRK_ORDER_DWD11_13_MRK_ORDER_DWD11,"Label: Yahoo News : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",310
+MRK_ORDER_DWD11_14_MRK_ORDER_DWD11,"Label: Drudge Report : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",311
+MRK_ORDER_DWD11_15_MRK_ORDER_DWD11,"Label: Fox News : 
+Format: F8.0
+Measure: Scale
+Display Width: 8",312
+MARK_START_TIME_DWD,"Label: CURRENT QUESTIONS timer start time
+Format: DATETIME20.0
+Measure: Scale
+Display Width: 8",313
+MARK_END_TIME_DWD,"Label: CURRENT QUESTIONS timer end time
+Format: DATETIME20.0
+Measure: Scale
+Display Width: 8",314
+MARK_DIFF_TIME_DWD,"Label: CURRENT QUESTIONS timer seconds
+Format: F11.0
+Measure: Scale
+Display Width: 8",315
+Section_Version_DWD,"Label: This question stores the version of this section
+Format: F11.0
+Measure: Scale
+Display Width: 8",316
+LOOPDWD7_DWD8CNT,"Format: F11.0
+Measure: Scale
+Display Width: 8",317
+LOOPDWD7_DWD8CNT1,"Format: F11.0
+Measure: Scale
+Display Width: 8",318
+Wavemarker,"Label: Wavemarker
+Format: F11.0
+Measure: Scale
+Display Width: 8",319
+RACE_wgt,"Label: Race Weight
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,White Non - Hispanic
+2,Black Non - Hispanic
+3,Asian Non - Hispanic
+4,Other Non - Hispanic
+5,Hispanic (All Races)",320
+CurrentMonth,"Label: CurrentMonth
+Format: F8.0
+Measure: Scale
+Display Width: 8",321
+CurrentYear,"Label: CurrentYear
+Format: F8.0
+Measure: Scale
+Display Width: 8",322
+KIDS01,"Label: How many children under the age of 18 are living with you in your household?(If no persons under 18 in your household, please type 0).
+Format: F8.0
+Measure: Scale
+Display Width: 8",323
+USRACE41,"Label: White
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",324
+USRACE42,"Label: Black or African American
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",325
+USRACE43,"Label: Native American or Alaskan Native
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",326
+USRACE44,"Label: Asian
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",327
+USRACE45,"Label: Pacific Islander
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",328
+USRACE46,"Label: Other race
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",329
+USRACE47,"Label: Prefer not to answer
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",330
+COUNTRY10,"Label: In which country do you live?{#CORTEX_RESP_INSTRUCTION.categories[{blankInstr}].label}
+Format: F3.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Anguilla
+2,Antigua and Barbuda
+3,Argentina
+4,Australia
+5,Austria
+6,Barbados
+7,Belgium
+8,Belize
+9,Bermuda
+10,Bolivia
+11,Brasil
+12,British Virgin Islands
+13,Canada
+14,Cayman Islands
+15,Chile
+16,China
+17,Colombia
+18,Costa Rica
+19,Croatia
+20,Czech Republic
+21,Denmark
+22,Dominica
+23,Ecuador
+24,Egypt
+25,El Salvador
+26,Finland
+27,France
+28,Germany
+29,Greece
+30,Grenada
+31,Guatemala
+32,Guyana
+33,Honduras
+34,Hungary
+35,Iceland
+36,India
+37,Indonesia
+38,Ireland
+39,Israel
+40,Italy
+41,Jamaica
+42,Japan
+43,Lebanon
+44,Malaysia
+45,México
+46,Morocco
+47,Netherlands
+48,New Zealand
+49,Nicaragua
+50,Nigeria
+51,Norway
+52,Panamá
+53,Paraguay
+54,Perú
+55,Philippines
+56,Poland
+57,Puerto Rico
+58,Qatar
+59,República Dominicana
+60,Romania
+61,Russia
+62,Saint Kitts and Nevis
+63,Saint Lucia
+64,Saint Vincent and the Grenadines
+65,Saudi Arabia
+66,Singapore
+67,Slovakia
+68,Slovenia
+69,South Africa
+70,South Korea
+71,Spain
+72,Sweden
+73,Switzerland
+74,Taiwan
+75,Tanzania
+76,Thailand
+77,The Bahamas
+78,Trinidad y Tobago
+79,Turkey
+80,Turks and Caicos Islands
+81,Ukraine
+82,United Arab Emirates
+83,United Kingdom
+84,United States
+85,Uruguay
+86,Venezuela
+87,Vietnam
+88,Hong Kong
+89,Portugal
+999,Other",331
+INDHH1001,"Label: Electronics/Computer/Software
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",332
+INDHH1002,"Label: Internet/E-Commerce
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",333
+INDHH1003,"Label: Telecom (phone, cell phone, cable)
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",334
+INDHH1004,"Label: Film Studio
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",335
+INDHH1005,"Label: Movie Theater/Cinema or Chain
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",336
+INDHH1006,"Label: Music
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",337
+INDHH1007,"Label: Publishing (Magazines, Book, etc.)
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",338
+INDHH1008,"Label: Radio
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",339
+INDHH1009,"Label: Sports
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",340
+INDHH1010,"Label: Television
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",341
+INDHH1011,"Label: Video Games
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",342
+INDHH1012,"Label: Other Entertainment
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",343
+INDHH1013,"Label: Advertising/Public Relations
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",344
+INDHH1014,"Label: Financial Services
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",345
+INDHH1015,"Label: Management Consulting
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",346
+INDHH1016,"Label: Marketing/Market Research
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",347
+INDHH1017,"Label: Sales/Sales Promotion
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",348
+INDHH1018,"Label: Transportation/Shipping
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",349
+INDHH1019,"Label: Education
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",350
+INDHH1020,"Label: Government/Politics
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",351
+INDHH1021,"Label: Grocery/Convenience/Dept. Stores
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",352
+INDHH1022,"Label: Healthcare/Pharmaceuticals
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",353
+INDHH1023,"Label: Insurance
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",354
+INDHH1024,"Label: Real Estate/Construction
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",355
+INDHH1025,"Label: Restaurants
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",356
+INDHH1026,"Label: Travel/Tourism
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",357
+INDHH1027,"Label: Beauty/Cosmetics
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",358
+INDHH1028,"Label: Fashion/Clothing
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",359
+INDHH1029,"Label: Toiletries
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",360
+INDHH1030,"Label: Agriculture
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",361
+INDHH1031,"Label: Automotive
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",362
+INDHH1032,"Label: Food/Beverages
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",363
+INDHH1033,"Label: Paper Products
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",364
+INDHH1034,"Label: Pet food/Pet care
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",365
+INDHH1035,"Label: Toys
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",366
+INDHH1036,"Label: None of the above
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+0,No
+1,Yes",367
+USEDU3,"Label: What is the highest degree or level of school you have completed?{#CORTEX_RESP_INSTRUCTION.categories[{singlePunch}].label}
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Grade 4 or less
+2,Grade 5 to 8
+3,Grade 9 to 11
+4,Grade 12 (no diploma)
+5,Regular High School Diploma
+6,GED or alternative credential
+7,""Some college credit, but less than 1 year""
+8,""1 or more years of college credit, no degree""
+9,""Associate's degree (AA, AS, etc.)""
+10,""Bachelor's degree (BA, BS, etc.)""
+11,""Master's degree (MA, MS, MBA, etc.)""
+12,""Professional degree (MD, DDS, JD, etc.)""
+13,""Doctorate degree (PhD, EdD, etc.)""",368
+USRETH3,"Label: Are you of Hispanic, Latino or Spanish origin?{#CORTEX_RESP_INSTRUCTION.categories[{blankInstr}].label}
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Yes
+2,No
+3,Prefer not to answer",369
+PGS01,"Label: How much of your household’s grocery shopping do you, yourself, do?{#CORTEX_RESP_INSTRUCTION.categories[{singlePunch}].label}
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,All of it
+2,Almost all of it
+3,About half of it
+4,Less than half of it
+5,None",370
+EMP01,"Label: What is your current employment status?{#CORTEX_RESP_INSTRUCTION.categories[{singlePunch}].label}
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Employed full-time
+2,Employed part-time
+3,Self employed
+4,Unemployed but looking for a job
+5,Unemployed and not looking for a job/Long-term sick or disabled
+6,""Full-time parent, homemaker""
+7,Retired
+8,Student/Pupil
+9,Military
+10,Prefer not to answer
+11,_11",371
+DKIDS01_1_DKIDS01_Gender,"Label: Child 1 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",372
+DKIDS01_2_DKIDS01_Gender,"Label: Child 2 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",373
+DKIDS01_3_DKIDS01_Gender,"Label: Child 3 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",374
+DKIDS01_4_DKIDS01_Gender,"Label: Child 4 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",375
+DKIDS01_5_DKIDS01_Gender,"Label: Child 5 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",376
+DKIDS01_6_DKIDS01_Gender,"Label: Child 6 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",377
+DKIDS01_7_DKIDS01_Gender,"Label: Child 7 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",378
+DKIDS01_8_DKIDS01_Gender,"Label: Child 8 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",379
+DKIDS01_9_DKIDS01_Gender,"Label: Child 9 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",380
+DKIDS01_10_DKIDS01_Gender,"Label: Child 10 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",381
+DKIDS01_11_DKIDS01_Gender,"Label: Child 11 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",382
+DKIDS01_12_DKIDS01_Gender,"Label: Child 12 : Gender
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,Boy
+2,Girl",383
+DKIDS01_1_DKIDS01_YoB,"Label: Child 1 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",384
+DKIDS01_2_DKIDS01_YoB,"Label: Child 2 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",385
+DKIDS01_3_DKIDS01_YoB,"Label: Child 3 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",386
+DKIDS01_4_DKIDS01_YoB,"Label: Child 4 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",387
+DKIDS01_5_DKIDS01_YoB,"Label: Child 5 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",388
+DKIDS01_6_DKIDS01_YoB,"Label: Child 6 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",389
+DKIDS01_7_DKIDS01_YoB,"Label: Child 7 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",390
+DKIDS01_8_DKIDS01_YoB,"Label: Child 8 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",391
+DKIDS01_9_DKIDS01_YoB,"Label: Child 9 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",392
+DKIDS01_10_DKIDS01_YoB,"Label: Child 10 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",393
+DKIDS01_11_DKIDS01_YoB,"Label: Child 11 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",394
+DKIDS01_12_DKIDS01_YoB,"Label: Child 12 : Year
+Format: F4.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1996,1996
+1997,1997
+1998,1998
+1999,1999
+2000,2000
+2001,2001
+2002,2002
+2003,2003
+2004,2004
+2005,2005
+2006,2006
+2007,2007
+2008,2008
+2009,2009
+2010,2010
+2011,2011
+2012,2012
+2013,2013
+2014,2014
+2015,2015
+2016,2016
+2017,2017
+2018,2018
+2019,2019
+2020,2020",395
+DKIDS01_1_DKIDS01_MoB,"Label: Child 1 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",396
+DKIDS01_2_DKIDS01_MoB,"Label: Child 2 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",397
+DKIDS01_3_DKIDS01_MoB,"Label: Child 3 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",398
+DKIDS01_4_DKIDS01_MoB,"Label: Child 4 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",399
+DKIDS01_5_DKIDS01_MoB,"Label: Child 5 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",400
+DKIDS01_6_DKIDS01_MoB,"Label: Child 6 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",401
+DKIDS01_7_DKIDS01_MoB,"Label: Child 7 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",402
+DKIDS01_8_DKIDS01_MoB,"Label: Child 8 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",403
+DKIDS01_9_DKIDS01_MoB,"Label: Child 9 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",404
+DKIDS01_10_DKIDS01_MoB,"Label: Child 10 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",405
+DKIDS01_11_DKIDS01_MoB,"Label: Child 11 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",406
+DKIDS01_12_DKIDS01_MoB,"Label: Child 12 : Month
+Format: F2.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,January
+2,February
+3,March
+4,April
+5,May
+6,June
+7,July
+8,August
+9,September
+10,October
+11,November
+12,December",407
+DKIDS01_1_DKIDS01_Rel,"Label: Child 1 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",408
+DKIDS01_2_DKIDS01_Rel,"Label: Child 2 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",409
+DKIDS01_3_DKIDS01_Rel,"Label: Child 3 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",410
+DKIDS01_4_DKIDS01_Rel,"Label: Child 4 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",411
+DKIDS01_5_DKIDS01_Rel,"Label: Child 5 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",412
+DKIDS01_6_DKIDS01_Rel,"Label: Child 6 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",413
+DKIDS01_7_DKIDS01_Rel,"Label: Child 7 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",414
+DKIDS01_8_DKIDS01_Rel,"Label: Child 8 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",415
+DKIDS01_9_DKIDS01_Rel,"Label: Child 9 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",416
+DKIDS01_10_DKIDS01_Rel,"Label: Child 10 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",417
+DKIDS01_11_DKIDS01_Rel,"Label: Child 11 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",418
+DKIDS01_12_DKIDS01_Rel,"Label: Child 12 : Relationship
+Format: F1.0
+Measure: Nominal
+Display Width: 8
+
+Value,Label
+1,""Your child (biological, adopted or step-child)""
+2,Other relative
+3,Non-relative and I’m the guardian
+4,Non-relative and I’m not the guardian",419
