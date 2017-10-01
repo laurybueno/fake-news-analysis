@@ -61,4 +61,7 @@ plot(vn, type="b", ylim=c(50,400), main="Verdadeiros negativos pela ordem em que
 plot(vp, type="b", ylim=c(50,400), main="Verdadeiros positivos pela ordem em que foram declarados", xlab="Momento em que a manchete é apresentada", ylab="Quantidade de declarações")
 
 
-
+# Crie um arquivo CSV com os resultados encontrados
+df <- data.frame(vp, vn, fp, fn)
+names(df) <- c('verdadeiros positivos', 'verdadeiros negativos', 'falsos positivos',  'falsos negativos')
+write.csv(file='matriz-confusao-ordenados.csv', x=df)
