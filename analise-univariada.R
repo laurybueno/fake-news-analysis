@@ -1,4 +1,4 @@
-dados <- read.csv(file="headline-responses.csv", header=TRUE, sep=",")
+dados <- read.csv(file="data/headline-responses.csv", header=TRUE, sep=",")
 
 moda <- function(x) {
   t <- table(x)
