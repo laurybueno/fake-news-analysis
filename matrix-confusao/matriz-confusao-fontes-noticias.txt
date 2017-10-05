@@ -1,0 +1,35 @@
+Falsos positivos:  1113
+CNN:  371
+Fox:  540
+Facebook:  451
+New York Times:  326
+Google News:  351
+Yahoo News:  326
+=================
+
+Falsos negativos:  449
+CNN:  144
+Fox:  105
+Facebook:  118
+New York Times:  103
+Google News:  85
+Yahoo News:  61
+=================
+
+Verdadeiros positivos:  2170
+CNN:  717
+Fox:  760
+Facebook:  644
+New York Times:  563
+Google News:  493
+Yahoo News:  467
+=================
+
+Verdadeiros negativos:  403
+CNN:  144
+Fox:  96
+Facebook:  102
+New York Times:  102
+Google News:  79
+Yahoo News:  69
+=================
