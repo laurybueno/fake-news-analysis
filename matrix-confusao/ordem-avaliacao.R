@@ -2,7 +2,6 @@
 # Este script tenta descobrir se a frequência de notícias consideradas verdadeiras ou falsas
 # tem alguma correlação com a ordem de apresentação.
 
-setwd('.')
 dados <- read.csv(file="data/headline-responses.csv", header=TRUE, sep=",")
 
 fp = vector()
@@ -51,7 +50,7 @@ for(i in 1:6) {
     print("======================")
 }
 
-# Produza gráficos
+# Produza gráficos da matriz de confusão
 plot(fn, type="b", ylim=c(50,400), main="Falsos negativos pela ordem em que foram declarados", xlab="Momento em que a manchete é apresentada", ylab="Quantidade de declarações")
 
 plot(fp, type="b", ylim=c(50,400), main="Falsos positivos pela ordem em que foram declarados", xlab="Momento em que a manchete é apresentada", ylab="Quantidade de declarações")
