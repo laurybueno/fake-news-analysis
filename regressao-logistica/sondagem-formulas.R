@@ -1,4 +1,7 @@
-# Importe a versão modificada da biblioteca glmulti
+library(glmulti)
+
+# Sobrescreva glmulti com a versão modificada da biblioteca
+# Consulte a linha 951 do arquivo externo para ler o patch
 source('regressao-logistica/vendor/glmulti.R')
 
 headlines <- read.csv(file="data/headline-responses.csv", header=TRUE, sep=",", na.strings=c(""))
@@ -35,4 +38,4 @@ tempo_fim <- Sys.time()
 
 print(tempo_fim - tempo_inicio)
 
-glmulti.lm.out@formulas
+print(glmulti.lm.out@formulas)
