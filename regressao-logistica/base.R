@@ -28,9 +28,4 @@ tempo_fim <- Sys.time()
 
 print(tempo_fim - tempo_inicio)
 
-summary(modelo)
-
-fitted.results <- predict(modelo,newdata=teste,type='response')
-fitted.results <- ifelse(fitted.results > 0.5,1,0)
-misClasificError <- mean(fitted.results != teste$accuracy_bool)
-print(paste('Accuracy',1-misClasificError))
+print(modelo)
