@@ -11,21 +11,11 @@ dados <- merge(x = headlines, y = people, by = 'ID', all.x = TRUE)
 faltantes <- sapply(dados, function(x) sum(is.na(x)))
 write.csv(file='regressao-logistica/dados-faltantes.csv', x=faltantes)
 
-# Remova a coluna ID
-dados$ID <- NULL
-
-# Liste as colunas que têm dados imutáveis
-names(dados[, sapply(dados, function(v) var(v, na.rm=TRUE)==0)])
-
-# Remova colunas de dados imutáveis
-dados <- dados[,sapply(dados, function(v) var(v, na.rm=TRUE)!=0)]
-
 # Separe os dados que podem ser usados no treinamento e teste do modelo
 dados_regressao = dados[which(dados$recalled_bool == 'True'),]
 
-# A partir de agora, recalled e recalled_bool, são colunas sem variação e devem ser removidas para não contaminar o modelo
-dados_regressao$recalled <- NULL
-dados_regressao$recalled_bool <- NULL
+# Separe apenas os dados estatisticamente significativos, segundo análise G-test discutida no relatório que acompanha este código
+dados_regressao <- dados_regressao[,c("headline", "accuracy_bool", "DP_INCOME", "DP_USHHI2_der", "USRACE4_der", "USRETH3_der", "HCAL_REGION1_Label_abbreviation_US", "HCAL_STDREGION_US", "USHHI2", "resp_gender")]
 
 # Divida os dados em dois blocos: treinamento (60% das observações) e teste (40%)
 set.seed(74564)
@@ -41,7 +31,7 @@ teste[] <- lapply(teste, factor)
 # Construa o modelo de regressão logística
 # Registre o tempo necessário para fazê-lo
 tempo_inicio <- Sys.time()
-modelo <- glm(is_fake ~., family=binomial(link='logit'), data=treinamento)
+modelo <- glm(accuracy_bool ~., family=binomial(link='logit'), data=treinamento)
 tempo_fim <- Sys.time()
 
 print(tempo_fim - tempo_inicio)
