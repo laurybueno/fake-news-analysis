@@ -1,4 +1,6 @@
 #install.packages("klaR")
+#install.MASS("MASS")
+library(MASS)
 library(klaR)
 
 pub <- read.csv(file="raw-data.csv", header=TRUE, sep=",")
@@ -11,17 +13,9 @@ ld <- function(x){
 }
 
 gen = ld(pub$resp_gender)
-
-
 rind = ld(pub$DP_INCOME)
-
-
 rfam = ld(pub$DP_USHHI2_der)
-
-
 raca = ld(pub$USRACE4_der)
-
-
 regiao = ld(pub$HCAL_STDREGION_US)
 
 
@@ -33,3 +27,5 @@ kpres <- kmodes(pessoas, 6)
 
 #guarda o grupo em que a pessoa foi colocada
 pessoas$cluster <- kpres$cluster
+
+print(kpres)
