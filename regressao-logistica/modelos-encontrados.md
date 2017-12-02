@@ -38,6 +38,20 @@ Logistic Regression Model
 ```
 
 ```
+> anova(modelo, test="Chisq")
+                Wald Statistics          Response: accuracy_bool
+
+ Factor                             Chi-Square d.f. P
+ headline                           164.70     10   <.0001
+ DP_INCOME                            9.57      1   0.0020
+ DP_USHHI2_der                        8.26      1   0.0041
+ USRACE4_der                          0.05      1   0.8208
+ HCAL_REGION1_Label_abbreviation_US   2.82      1   0.0932
+ resp_gender                         15.02      1   0.0001
+ TOTAL                              188.84     15   <.0001
+```
+
+```
 > validate(modelo, method="boot", B=1000)
           index.orig training   test optimism index.corrected    n
 Dxy           0.3097   0.3195 0.3006   0.0189          0.2908 1000
