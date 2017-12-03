@@ -1,5 +1,5 @@
 #install.packages("klaR")
-#install.MASS("MASS")
+#install.packages("MASS")
 library(MASS)
 library(klaR)
 
@@ -12,6 +12,7 @@ ld <- function(x){
   return (x)
 }
 
+#define as variaveis que serao utilizadas
 gen = ld(pub$resp_gender)
 rind = ld(pub$DP_INCOME)
 rfam = ld(pub$DP_USHHI2_der)
@@ -20,12 +21,17 @@ regiao = ld(pub$HCAL_STDREGION_US)
 
 
 #Cria Novo banco com as variaveis que serão utilizadas
-pessoas <- data.frame(gen,rind,rfam,raca,regiao)
+pessoas <- matrix(c(gen,rind,rfam,raca,regiao), ncol=5)
+
+#nome das variaveis para o plot
+colnames(pessoas) <- c("genero","renda individual","renda familiar","raca","regiao")
 
 #Executa o k-modes
-kpres <- kmodes(pessoas, 6)
+kpres <- kmodes(pessoas, 4)
 
-#guarda o grupo em que a pessoa foi colocada
-pessoas$cluster <- kpres$cluster
+#adiciona um pouco de ruido nos dados para abrir espaco no plot
+pessoasR <- jitter(pessoas, factor = 2)
 
-print(kpres)
+#faz o plot
+plot(pessoasR, col = kpres$cluster)
+points(kpres$modes, col = 1:4, pch = 8)
